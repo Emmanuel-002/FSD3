@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+        body{
+            background-image: url('Images/surveyFormBackground.jpg');
+        }
+        form{
+            width: 60vw;
+            background-color: #054908c0;
+            opacity: 0.9;
+            padding: 2px 10px 10px 10px;
+            line-height: 1.5rem;
+            box-sizing: border-box;
+        }
+        .heading{
+            text-align: center;
+        }
+        input[type="text"], input[type="email"], input[type="submit"], select, textarea{
+            width: 58vw;
+            box-sizing: border-box;
+            color: #444;
+        }
+        input[type="text"], input[type="email"], input[type="submit"], select{
+            height: 5vh;
+        }
+        input[type="submit"]{
+            background-color: green;
+            border: none;
+            color: #fff;
+        }
+        div{
+            margin: 1px 0px;
+        }
+        option{
+            color: #444;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <img src="images/tree.jpg" alt="Tree">
+        <div class="heading">
+            <h1>Tree Survey Form</h1>
+            A survey form on the health of the environment
+        </div>
+        <div>
+            Name: <br> <input type="text" placeholder="Enter your name e.g John Doe"><br>
+            Email: <br> <input type="email" placeholder="xyz@someplace.com"><br>
+            Age(Optional): <br> <input type="text" placeholder="10"><br>
+            <div class="heading">Select continent of residence</div>
+            <select name="continent" id="continent">
+                <option value="">Africa</option>
+                <option value="">Asia</option>
+                <option value="">Antarctica</option>
+                <option value="">Australia</option>
+                <option value="">Europe</option>
+                <option value="">North America</option>
+                <option value="">South America</option>
+            </select>          
+            <div>
+                <h4 class="heading">Choose your prefered gender</h4>
+                <input type="radio" name="gender" id="female"> <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="male"> <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="other"> <label for="other">Other</label>
+            </div>
+            <div>
+                <h4 class="heading">Please select atleast one of the options below:</h4>
+                <input type="checkbox" name="option" id="option1"><label for="option1"> I have planted a tree or any other plant</label><br>
+                <input type="checkbox" name="option" id="option2"><label for="option2"> I take part in the community service to the environment</label><br>
+                <input type="checkbox" name="option" id="option3"><label for="option3"> I promise to plant more from now on</label><br>
+                <h4 class="heading">Any comment or suggestion</h4>
+                <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="Comments/Suggestions"></textarea><br>
+                <input type="submit" value="Submit">
+            </div>
+    </form>
+</body>
+</html>
