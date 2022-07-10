@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment01</title>
+</head>
+<body>
+    <script>
+        let contacts = [
+            {
+                firstName: 'lorem',
+                lastName: 'ipsum',
+                phoneNo: '0000001',
+                likes: ['coding', 'teaching', 'innovations']
+            },
+            {
+                firstName: 'dolor',
+                lastName: 'sir',
+                phoneNo: '0000002',
+                likes: ['reading', 'critical thinking', 'gisting']
+            },
+            {
+                firstName: 'amet',
+                lastName: 'consectetur',
+                phoneNo: '0000003',
+                likes: ['coding', 'research', 'music']
+            },
+            {
+                firstName: 'adipisicing',
+                lastName: 'elit',
+                phoneNo: '0000004',
+                likes: ['people', 'sports', 'computing']
+            },
+            {
+                firstName: 'repellendus',
+                lastName: 'eveniet',
+                phoneNo: '0000005',
+                likes: ['travelling', 'meeting people', 'critical thinking']
+            }
+        ];
+            let findContact = (name, prop) =>{
+                for(let contact of contacts){
+                    if(contact.firstName === name){
+                            if(contact[prop]) return contact[prop];
+                            else return 'no such property';
+                    }
+                }
+                return 'No such contact';
+            }
+            console.log(findContact('ipsum', 'like'));
+    </script>
+</body>
+</html>
