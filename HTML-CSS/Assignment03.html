@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        div{
+            margin-top: 2vh;
+            width: 40vw;
+            background-image: url("images/contactUsBackground.jpg");
+            background-repeat: no-repeat;
+            background-position: fixed;
+            background-size: cover;
+            line-height: 3rem;
+            padding: 1vh 0;
+        }
+        h1{
+            color: deepskyblue;
+        }
+        label{
+            color: rgba(100, 100, 100, 0.9);
+        }
+        form{
+            margin: 1vh 1vw 1vh 19vw;
+            padding: 1vh 1vw;
+            background-color: white;
+        }
+        input[type="submit"]{
+            color: rgba(100, 100, 100, 0.9);
+            background-color: #1e86ca;
+            color: white;
+        } 
+        input{
+            border: 2px solid #87ceeb;
+            padding: 0px 5px;
+            width: 18vw;
+            height: 3vh;
+        }
+        input[type="submit"]:hover{
+            background-color: navy;
+        }
+        textarea{
+            border: 2px solid #87ceeb;
+            width: 18vw;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <form action="#">
+        <h1>Contact Us</h1>
+        <input type="text" name="name" id="name" placeholder="Full Name"><br />
+        <input type="email" name="email" id="email" placeholder="Email"><br />
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number"><br />
+        <input type="text" name="website" id="website" placeholder="Website"><br />
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea><br />
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
